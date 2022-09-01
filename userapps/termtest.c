@@ -264,8 +264,8 @@ retry:
 
    printf("Term size: %d rows x %d cols\n", w.ws_row, w.ws_col);
    printf("Tot iterations: %d\n\n", iters);
-   printf("Screen redraw:       %12llu cycles (%s)\n", c, tot_time_s);
-   printf("Avg. character cost: %12llu cycles (%s)\n", c / tot, c_time_s);
+   printf("Screen redraw:       %12" PRIu64 " cycles (%s)\n", c, tot_time_s);
+   printf("Avg. character cost: %12" PRIu64 " cycles (%s)\n", c/tot, c_time_s);
    printf("Cycles per sec:      %12.0f cycles/sec\n", cycles_per_sec);
    free(buf);
 }
